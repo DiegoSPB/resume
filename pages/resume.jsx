@@ -22,7 +22,7 @@ const experiences = [
       'First line of code to launch.',
       'Responsible for full-stack app development.',
       'Handled everything from custom configured DevOps setup on Digital Ocean to back-end architecture build-out using Ruby on Rails, to full front-end development.',
-      'Technologies used: Ruby on Rails, Postgres, Stripe, Sendgrid, Rspec, Capistrano, Nokogiri...',
+      'Technologies used: Ruby on Rails, Postgres, Stripe, Sendgrid, Rspec, Capistrano, Nokogiri.',
     ] 
   },
   {
@@ -33,7 +33,7 @@ const experiences = [
     description: [
       'Worked in a small team as a full-stack developer, with emphasis as the lead back- end engineer.',
       'Responsible for building the main app in Rails, in addition to the client side embeddable JS app communication with a Node back-end.',
-      'Technologies used: Ruby on Rails, NodeJs, Express, Redis, Resque, Stripe, Rspec...',
+      'Technologies used: Ruby on Rails, NodeJs, Express, Redis, Resque, Stripe, Rspec.',
     ] 
   },
   {
@@ -141,7 +141,7 @@ const Divider = styled.hr`
   border: 0;
 
   &:before {
-    // content: "--";
+    content: "--";
   }
 `;
 
