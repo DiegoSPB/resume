@@ -1,0 +1,19 @@
+{
+  "name": "theworkofdiego.com",
+  "description": "A Web Developer with a background in 3D and visual effects. Learning and utilizing new tech has been the cornerstone of my career.",
+  "homepage": "https://theworkofdiego.com/",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "9.3.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-markdown": "^4.3.1"
+  }
+}
