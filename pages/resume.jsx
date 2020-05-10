@@ -125,6 +125,7 @@ const SectionParagraph = styled.p`
   margin-bottom: 1rem;
   margin-top: 0;
   font-size: 0.875rem;
+  line-height: 18px;
 `;
 
 const SectionSubtitle = styled.h3`
