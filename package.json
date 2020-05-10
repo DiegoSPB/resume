@@ -7,8 +7,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build": "next build && next export -o build",
+    "postbuild": "mv ./build/index.html ./ && mv ./build/404.html ./ && mv ./build/resume.html ./pages/resume.html && rm -r ./build"
   },
   "dependencies": {
     "next": "9.3.5",
