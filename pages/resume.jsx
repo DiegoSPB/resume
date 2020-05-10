@@ -136,13 +136,11 @@ const SectionSubtitle = styled.h3`
 `;
 
 const Divider = styled.hr`
-  margin: -1rem 0 2rem;
+  margin: 1rem 0 2rem;
   font-size: 1.25rem;
   border: 0;
-
-  &:before {
-    content: "--";
-  }
+  border-bottom: 1px solid #c0c0c0;
+  width: 22%;
 `;
 
 
