@@ -2,6 +2,20 @@ import React from 'react'
 import Document, { Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components';
 
+ const cssGlobal = `
+  html, body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+      sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+`;
+
 const description = 'Senior Software Engineer'
 const icon = '/favicon.svg'
 const image = '/image.png'
@@ -61,6 +75,7 @@ class Doc extends Document {
           <link rel="prefetch" href="/" />
           <link rel="prefetch" href="/resume" />
           <link rel="prefetch" href="https://github.com/diegospb" />
+          <style dangerouslySetInnerHTML={{ __html: cssGlobal }} />
           {this.props.styleTags}
         </head>
         <body>
