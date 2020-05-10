@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
+import { FullLogo } from './assets'
 
 const Container = styled.div`
   display: flex;
@@ -24,7 +25,6 @@ const Title = styled.h1`
   justify-content: space-between;
   line-height: 1;
   min-width: 15rem;
-  padding-bottom: 1.25rem;
   width: 100%;
 `;
 const Name = styled.span`
@@ -54,8 +54,7 @@ const Links = styled.p`
 const Index = () => (
   <Container>
     <Title>
-      <Name>Diego SPB</Name>
-      <Name>Diego SPB</Name>
+      <FullLogo />
     </Title>
     <Links>
       <Link href="/resume"><a>resume</a></Link>
