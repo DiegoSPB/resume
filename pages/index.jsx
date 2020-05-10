@@ -61,7 +61,7 @@ const Index = () => (
       <FullLogo />
     </Title>
     <Links>
-      <Link href="/resume"><StyledLink>Resumé </StyledLink></Link>
+      <Link href="/resume"><StyledLink href="/resume">Resumé </StyledLink></Link>
       |
       <StyledLink href="https://github.com/diegospb"> github/diegospb </StyledLink>
       |
