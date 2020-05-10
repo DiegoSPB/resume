@@ -63,7 +63,9 @@ const Index = () => (
     <Links>
       <Link href="/resume"><StyledLink href="/resume">Resumé </StyledLink></Link>
       |
-      <StyledLink href="https://github.com/diegospb"> github/diegospb </StyledLink>
+      <StyledLink href="https://github.com/diegospb"> github </StyledLink>
+      |
+      <StyledLink href="https://www.linkedin.com/in/diegospb/"> linkedin </StyledLink>
       |
       <StyledLink href="mailto:hello@theworkofdiego.com"> contact </StyledLink>
     </Links>

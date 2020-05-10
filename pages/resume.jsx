@@ -141,7 +141,7 @@ const Divider = styled.hr`
   border: 0;
 
   &:before {
-    content: "......";
+    // content: "--";
   }
 `;
 
@@ -155,7 +155,9 @@ const Resume = () => (
     <Links>
       <StyledLink href="mailto:hello@theworkofdiego.com"> contact </StyledLink>
       |
-      <StyledLink href="https://github.com/diegospb"> github/diegospb </StyledLink>
+      <StyledLink href="https://github.com/diegospb"> github </StyledLink>
+      |
+      <StyledLink href="https://www.linkedin.com/in/diegospb/"> linkedin </StyledLink>
     </Links>
     <SectionTitle>About me</SectionTitle>
     <SectionParagraph>
@@ -166,7 +168,7 @@ const Resume = () => (
     <SectionParagraph>
       Ruby, and of course - Rails. 
       <br />
-      React - hooks 😍.
+      React - hooks!!!.
       <br />
       GraphQL + Apollo FTW!. 
       <br />
