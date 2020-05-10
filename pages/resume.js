@@ -1,14 +1,22 @@
+import React, { Component } from 'react'
 import Link from 'next/link'
+import ReactMarkdown from 'react-markdown'
 
-export default function Resume() {
-  return (
-    <>
-      <h1>hello</h1>
-      <h2>
-        <Link href="/">
-          <a>Back to home</a>
-        </Link>
-      </h2>
-    </>
-  )
+class Resume extends Component {
+  static async getInitialProps({ query }) {
+    return { source: query.source }
+  }
+
+  render() {
+    const { source } = this.props
+
+    return (
+      <>
+        <ReactMarkdown skipHtml source={source} />
+        <Link href="/"><a>home</a></Link>
+      </>
+    )
+  }
 }
+
+export default Resume

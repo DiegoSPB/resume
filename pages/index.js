@@ -1,23 +1,24 @@
-import Head from 'next/head'
+import React, { Component } from 'react'
+import ReactMarkdown from 'react-markdown'
 import Link from 'next/link'
 
-export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Test</title>
-      </Head>
+class Index extends Component {
+  static async getInitialProps({ query }) {
+    return { source: query.source }
+  }
 
-      <main>
+  render() {
+    const { source } = this.props
+
+    return (
+      <>
         <h1>
           hello
         </h1>
         <Link href="/resume"><a>resume</a></Link>
-      </main>
-
-
-      <style jsx>{`
-      `}</style>
-    </div>
-  )
+      </>
+    )
+  }
 }
+
+export default Index
