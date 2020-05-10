@@ -1,5 +1,6 @@
 import React from 'react'
 import Document, { Main, NextScript } from 'next/document'
+import { ServerStyleSheet } from 'styled-components';
 
 const description = 'Senior Software Engineer'
 const icon = '/favicon.svg'
@@ -16,14 +17,20 @@ const getTitle = (pathname) => {
 }
 
 class Doc extends Document {
-  static async getInitialProps(source) {
-    const initialProps = await Document.getInitialProps(source)
-    const title = getTitle(source.pathname)
-    return { ...initialProps, title }
+  static getInitialProps({ pathname, renderPage }) {
+    const title = getTitle(pathname)
+    const sheet = new ServerStyleSheet();
+    const page = renderPage((App) => (props) =>
+      sheet.collectStyles(<App {...props} />),
+    );
+    const styleTags = sheet.getStyleElement();
+
+    return { ...page, styleTags };
   }
 
   render() {
     const { title } = this.props
+
     return (
       <html lang="en">
         <head>
@@ -54,6 +61,7 @@ class Doc extends Document {
           <link rel="prefetch" href="/" />
           <link rel="prefetch" href="/resume" />
           <link rel="prefetch" href="https://github.com/diegospb" />
+          {this.props.styleTags}
         </head>
         <body>
           <Main />
