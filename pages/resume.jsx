@@ -179,7 +179,9 @@ const Resume = () => (
       <>
         <SectionSubtitle> {experience.company} </SectionSubtitle>
         <SectionParagraph>
-          {experience.title} - {experience.city}, {experience.years}
+          {experience.title}
+          <br />
+          {experience.city}, {experience.years}
           <br />
           <br />
           {experience.description.map((item) => (
