@@ -37,17 +37,21 @@ const Links = styled.p`
   margin-bottom: 1rem;
   margin-top: 0;
   text-align: right;
+`;
 
-  a {
-    font-weight: 500;
-    text-decoration: none;
-    transition: color 0.4s;
-    :hover {
-      color: #0074d9;
-    }
-    :visited {
-      color: inherit;
-    }
+const StyledLink = styled.a`
+  color: #030303;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.4s;
+  cursor: pointer;
+
+  :hover {
+    color: #0074d9 !important;
+  }
+
+  :visited {
+    color: inherit;
   }
 `;
 
@@ -57,7 +61,11 @@ const Index = () => (
       <FullLogo />
     </Title>
     <Links>
-      <Link href="/resume"><a>resume</a></Link>
+      <Link href="/resume"><StyledLink>Resumé </StyledLink></Link>
+      |
+      <StyledLink href="https://github.com/diegospb"> github/diegospb </StyledLink>
+      |
+      <StyledLink href="mailto:hello@theworkofdiego.com"> contact </StyledLink>
     </Links>
   </Container>
 )
