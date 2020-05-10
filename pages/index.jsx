@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
-import { FullLogo } from './assets'
+import { FullLogo } from '../components/assets'
 
 const Container = styled.div`
   display: flex;
