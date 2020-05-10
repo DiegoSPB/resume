@@ -151,11 +151,11 @@ const Resume = () => (
       <Title>Senior Software Engineer</Title>
     </LogoContainer>
     <Links>
-      <StyledLink href="mailto:hello@theworkofdiego.com"> contact </StyledLink>
-      |
       <StyledLink href="https://github.com/diegospb"> github </StyledLink>
       |
       <StyledLink href="https://www.linkedin.com/in/diegospb/"> linkedin </StyledLink>
+      |
+      <StyledLink href="mailto:hello@theworkofdiego.com"> contact </StyledLink>
     </Links>
     <SectionTitle>About me</SectionTitle>
     <SectionParagraph>
