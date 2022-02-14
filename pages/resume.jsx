@@ -72,6 +72,26 @@ const experiences = [
   },
 ]
 
+const LineUl = styled.ul`
+	font-size: 13px;
+	line-height: 1.5em;
+	margin: 5px 0 15px;
+	padding: 0;
+	li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 20px;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 9px;
+			width: 8px;
+      display: block;
+			border-top: 2px solid #ff6600;
+		}
+	}
+`;
 
 const Container = styled.div`
   position: relative;
@@ -132,7 +152,7 @@ const StyledLink = styled.a`
 const SectionTitle = styled.h2`
   font-size: 0.875rem;
   text-transform: uppercase;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 10px;
 `;
 
@@ -202,8 +222,11 @@ const Resume = () => (
           <br />
           {experience.description.map((item) => (
             <>
-              {item}
-              <br />
+              <LineUl>
+                <li>
+                  {item}
+                </li>
+              </LineUl>
             </>
           ))}
         </SectionParagraph>
