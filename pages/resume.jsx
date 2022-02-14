@@ -74,7 +74,7 @@ const experiences = [
 
 const LineUl = styled.ul`
 	font-size: 13px;
-	line-height: 12px;
+	line-height: 1.5em;
 	margin: 5px 0 5px;
 	padding: 0;
 	li {
@@ -85,7 +85,7 @@ const LineUl = styled.ul`
 			content: "";
 			position: absolute;
 			left: 0;
-			top: 4px;
+			top: 9px;
 			width: 8px;
       display: block;
 			border-top: 2px solid #bbbbbb;
