@@ -184,7 +184,7 @@ const Resume = () => (
   <Container>
     <LogoContainer>
       <Link href="/"><a><FullLogo /></a></Link>
-      <Title>Senior Software Engineer</Title>
+      <Title>Lead Software Engineer</Title>
     </LogoContainer>
     <Links>
       <StyledLink href="https://github.com/diegospb"> github </StyledLink>
