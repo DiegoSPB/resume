@@ -209,6 +209,8 @@ const Resume = () => (
       Neovim ❤️
       <br />
       Dabbling Go
+      <br />
+      and others
     </SectionParagraph>
     <SectionTitle>Experience</SectionTitle>
     {experiences.map((experience) => (
