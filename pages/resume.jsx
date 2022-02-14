@@ -74,8 +74,8 @@ const experiences = [
 
 const LineUl = styled.ul`
 	font-size: 13px;
-	line-height: 1.5em;
-	margin: 5px 0 15px;
+	line-height: 12px;
+	margin: 5px 0 5px;
 	padding: 0;
 	li {
     list-style: none;
@@ -85,10 +85,10 @@ const LineUl = styled.ul`
 			content: "";
 			position: absolute;
 			left: 0;
-			top: 9px;
+			top: 4px;
 			width: 8px;
       display: block;
-			border-top: 2px solid #ff6600;
+			border-top: 2px solid #bbbbbb;
 		}
 	}
 `;
@@ -218,7 +218,6 @@ const Resume = () => (
           {experience.title}
           <br />
           {experience.city}, {experience.years}
-          <br />
           <br />
           {experience.description.map((item) => (
             <>
