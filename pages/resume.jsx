@@ -7,10 +7,28 @@ const experiences = [
   {
     company: 'ShareGrid',
     city: 'Seattle',
+    years: '2020 - current',
+    title: 'Lead Software Engineer',
+    description: [
+      'Served as team leader, making decisions on goals, assignments, standups and retros.',
+      'Interviewed, onboarded and trained new engineers.',
+      'Lead the effort to support complex itemized tax rules within the marketplace.',
+      'Regularly evaluated and optimized aws configurations.',
+      'Maintained complex SQL queries, views and dashboards for financial/business analysis.',
+    ] 
+  },
+  {
+    company: 'ShareGrid',
+    city: 'Seattle',
     years: '2018 - 2020',
     title: 'Senior Software Engineer',
     description: [
-      'Worked alongside a small full-stack team to develop new features and keep the app growing.',
+      'Worked alongside a full-stack team, some of my key contributions were:',
+      'Within a team of 2, rewrote the search experience - moved core sections into a Single Page Application, created multiple services to enable a back-end driven system to allow a smarter multi-item search experience.',
+      'Completely revamped the verification system into an admin driven react app.',
+      'Implemented the shipping functionality within their buy&sell marketplace.',
+      'Centralized the multiple communication streams into a Messaging Service.',
+      'Setup the CI/CD pipeline.'
     ] 
   },
   {
@@ -22,7 +40,6 @@ const experiences = [
       'First line of code to launch.',
       'Responsible for full-stack app development.',
       'Handled everything from custom configured DevOps setup on Digital Ocean to back-end architecture build-out using Ruby on Rails, to full front-end development.',
-      'Technologies used: Ruby on Rails, Postgres, Stripe, Sendgrid, Rspec, Capistrano, Nokogiri.',
     ] 
   },
   {
@@ -31,9 +48,8 @@ const experiences = [
     years: '2017 - 2017',
     title: 'Lead Developer',
     description: [
-      'Worked in a small team as a full-stack developer, with emphasis as the lead back- end engineer.',
+      'Worked in a team as a full-stack developer, with emphasis as the lead back- end engineer.',
       'Responsible for building the main app in Rails, in addition to the client side embeddable JS app communication with a Node back-end.',
-      'Technologies used: Ruby on Rails, NodeJs, Express, Redis, Resque, Stripe, Rspec.',
     ] 
   },
   {
@@ -159,20 +175,20 @@ const Resume = () => (
     </Links>
     <SectionTitle>About me</SectionTitle>
     <SectionParagraph>
-      A Web Developer with a background in 3D and visual effects. 
-      Learning and utilizing new tech has been the cornerstone of my career.
+      A software engineer with a background in VFX. Learning and utilizing new
+      tech has been the cornerstone of my career.
     </SectionParagraph>
     <SectionTitle>Tools</SectionTitle>
     <SectionParagraph>
-      Ruby, and of course - Rails. 
+      Ruby, Rails, Node, Sidekiq, ElasticSearch, SQL
       <br />
-      React - hooks!!!.
+      Typescript, React, GraphQL, Apollo
       <br />
-      GraphQL + Apollo FTW!. 
+      AWS
       <br />
-      Vim - all day, everyday!
+      Neovim ❤️
       <br />
-      And much more in between!
+      Dabbling Go
     </SectionParagraph>
     <SectionTitle>Experience</SectionTitle>
     {experiences.map((experience) => (
