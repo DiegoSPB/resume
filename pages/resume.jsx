@@ -167,7 +167,7 @@ const SectionParagraph = styled.p`
 const SectionSubtitle = styled.h3`
   font-size: 0.9375rem;
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 2.25;
   margin: 0;
 `;
 
