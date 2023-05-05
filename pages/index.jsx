@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
 import { FullLogo } from '../components/assets'
@@ -26,10 +26,6 @@ const Title = styled.h1`
   line-height: 1;
   min-width: 15rem;
   width: 100%;
-`;
-const Name = styled.span`
-    display: inline-block;
-    margin-left: 3rem;
 `;
 
 const Links = styled.p`
@@ -61,7 +57,7 @@ const Index = () => (
       <FullLogo />
     </Title>
     <Links>
-      <Link href="/resume"><StyledLink href="/resume">Resumé </StyledLink></Link>
+      <Link href="/resume" legacyBehavior><StyledLink href="/resume">Resumé </StyledLink></Link>
       |
       <StyledLink href="https://github.com/diegospb"> github </StyledLink>
       |

@@ -1,6 +1,5 @@
 import React from 'react'
-import Document, { Main, NextScript } from 'next/document'
-import { ServerStyleSheet } from 'styled-components';
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 const cssGlobal = `
   html, body {
@@ -22,31 +21,25 @@ const image = '/image.png'
 const name = 'Diego SPB'
 const url = 'https://theworkofdiego.com'
 
-const getTitle = (pathname) => {
-  const path =
-    pathname.includes('404') || pathname.includes('error') ? '404' : pathname
-  return `diegospb | ${path === '/' ? ':hallo:' : path.replace('/', ' ').replace(/\.[^/.]+$/, '')
-    }`
-}
-
 class Doc extends Document {
-  static getInitialProps({ pathname, renderPage }) {
-    const title = getTitle(pathname)
-    const sheet = new ServerStyleSheet();
-    const page = renderPage((App) => (props) =>
-      sheet.collectStyles(<App {...props} />),
-    );
-    const styleTags = sheet.getStyleElement();
+  static async getServerSideProps(ctx) {
+    const originalRenderPage = ctx.renderPage;
 
-    return { ...page, styleTags };
+    ctx.renderPage = () =>
+      originalRenderPage({
+        enhanceApp: (App) => (props) => <App {...props} />,
+      });
+
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
   }
 
   render() {
-    const { title } = this.props
+    const { title } = this.props.__NEXT_DATA__.query
 
     return (
-      <html lang="en">
-        <head>
+      <Html lang="en">
+        <Head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -76,14 +69,15 @@ class Doc extends Document {
           <link rel="prefetch" href="https://github.com/diegospb" />
           <style dangerouslySetInnerHTML={{ __html: cssGlobal }} />
           {this.props.styleTags}
-        </head>
+        </Head>
         <body>
           <Main />
-          {process.env.NODE_ENV === 'development' && <NextScript />}
+          <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
-}
+};
 
-export default Doc
+export default Doc;
+

@@ -194,15 +194,17 @@ const Divider = styled.hr`
 const Resume = () => (
   <Container>
     <LogoContainer>
-      <Link href="/"><a><FullLogo /></a></Link>
+      <Link href="/" legacyBehavior><FullLogo /></Link>
       <Title>Tech Lead - Senior Software Engineer</Title>
     </LogoContainer>
     <Links>
-      <StyledLink href="https://github.com/diegospb"> github </StyledLink>
-      |
-      <StyledLink href="https://www.linkedin.com/in/diegospb/"> linkedin </StyledLink>
-      |
-      <StyledLink href="mailto:hello@theworkofdiego.com"> contact </StyledLink>
+      <div>
+        <StyledLink href="https://github.com/diegospb"> github </StyledLink>
+        |
+        <StyledLink href="https://www.linkedin.com/in/diegospb/"> linkedin </StyledLink>
+        |
+        <StyledLink href="mailto:hello@theworkofdiego.com"> contact </StyledLink>
+      </div>
     </Links>
     <SectionTitle>About me</SectionTitle>
     <SectionParagraph>
