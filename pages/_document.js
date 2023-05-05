@@ -2,7 +2,7 @@ import React from 'react'
 import Document, { Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components';
 
- const cssGlobal = `
+const cssGlobal = `
   html, body {
     padding: 0;
     margin: 0;
@@ -25,9 +25,8 @@ const url = 'https://theworkofdiego.com'
 const getTitle = (pathname) => {
   const path =
     pathname.includes('404') || pathname.includes('error') ? '404' : pathname
-  return `diegospb | ${
-    path === '/' ? ':hallo:' : path.replace('/', ' ').replace(/\.[^/.]+$/, '')
-  }`
+  return `diegospb | ${path === '/' ? ':hallo:' : path.replace('/', ' ').replace(/\.[^/.]+$/, '')
+    }`
 }
 
 class Doc extends Document {
@@ -51,7 +50,7 @@ class Doc extends Document {
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width,initial-scale=1" />
-          <title>{title}</title>
+          <title>Diego Suarez Peredo | Tech Lead - Senior Software Engineer</title>
           <meta name="application-name" content={name} />
           <meta name="subject" content={description} />
           <meta name="name" itemProp="name" content={name} />

@@ -5,9 +5,20 @@ import { FullLogo } from '../components/assets'
 
 const experiences = [
   {
+    company: 'QuickNode',
+    city: 'Seattle',
+    years: '2022 - current',
+    title: 'Tech Lead - Senior Software Engineer',
+    description: [
+      'Designed and implemented a new Billing System',
+      'Built migration tools to inform and gradually migrate users to the new Billing System',
+      'Worked with revenue teams to generate custom revenue recognition reports Wrote, tested and maintained Internal & external APIs',
+    ]
+  },
+  {
     company: 'ShareGrid',
     city: 'Seattle',
-    years: '2020 - current',
+    years: '2020 - 2022',
     title: 'Lead Software Engineer',
     description: [
       'Served as team leader, making decisions on goals, assignments, standups and retros.',
@@ -15,7 +26,7 @@ const experiences = [
       'Lead the effort to support complex itemized tax rules within the marketplace.',
       'Regularly evaluated and optimized aws configurations.',
       'Maintained complex SQL queries, views and dashboards for financial/business analysis.',
-    ] 
+    ]
   },
   {
     company: 'ShareGrid',
@@ -29,7 +40,7 @@ const experiences = [
       'Implemented the shipping functionality within their buy&sell marketplace.',
       'Centralized the multiple communication streams into a Messaging Service.',
       'Setup the CI/CD pipeline.'
-    ] 
+    ]
   },
   {
     company: 'Propopen',
@@ -40,7 +51,7 @@ const experiences = [
       'First line of code to launch.',
       'Responsible for full-stack app development.',
       'Handled everything from custom configured DevOps setup on Digital Ocean to back-end architecture build-out using Ruby on Rails, to full front-end development.',
-    ] 
+    ]
   },
   {
     company: 'Produpdate',
@@ -50,7 +61,7 @@ const experiences = [
     description: [
       'Worked in a team as a full-stack developer, with emphasis as the lead back- end engineer.',
       'Responsible for building the main app in Rails, in addition to the client side embeddable JS app communication with a Node back-end.',
-    ] 
+    ]
   },
   {
     company: 'Max2Maya',
@@ -59,7 +70,7 @@ const experiences = [
     title: 'Python Developer',
     description: [
       "Developed custom tools to import custom 3ds Max's data to Maya.",
-    ] 
+    ]
   },
   {
     company: 'Caramel VFX',
@@ -68,7 +79,7 @@ const experiences = [
     title: 'Co-Founder / CG Supervisor',
     description: [
       'Oversaw all phases of the 3D production of the studio, from modeling, rigging, animation, to compositing.',
-    ] 
+    ]
   },
 ]
 
@@ -184,7 +195,7 @@ const Resume = () => (
   <Container>
     <LogoContainer>
       <Link href="/"><a><FullLogo /></a></Link>
-      <Title>Lead Software Engineer</Title>
+      <Title>Tech Lead - Senior Software Engineer</Title>
     </LogoContainer>
     <Links>
       <StyledLink href="https://github.com/diegospb"> github </StyledLink>
@@ -208,7 +219,7 @@ const Resume = () => (
       <br />
       Neovim ❤️
       <br />
-      Dabbling Go
+      Dabbling Go, Rust
       <br />
       and others
     </SectionParagraph>
